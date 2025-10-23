@@ -1,14 +1,14 @@
 [NEAT]
 fitness_criterion     = max
 fitness_threshold     = 250
-pop_size              = 500
+pop_size              = 70
 reset_on_extinction   = False
 
 [DefaultGenome]
 # node activation options
-activation_default      = sigmoid
+activation_default      = tanh
 activation_mutate_rate  = 0.0
-activation_options      = sigmoid
+activation_options      = tanh
 
 # node aggregation options
 aggregation_default     = sum
@@ -37,15 +37,15 @@ enabled_default         = True
 enabled_mutate_rate     = 0.01
 
 feed_forward            = True
-initial_connection      = full_nodirect
+initial_connection      = full_direct
 
 # node add/remove rates
-node_add_prob           = 0.2
-node_delete_prob        = 0.2
+node_add_prob           = 0.3
+node_delete_prob        = 0.1
 
 # network parameters
-num_hidden              = 0
-num_inputs              = 8
+num_hidden              = 2
+num_inputs              = 24
 num_outputs             = 4
 
 # node response options
@@ -71,7 +71,7 @@ compatibility_threshold = 3.0
 
 [DefaultStagnation]
 species_fitness_func = max
-max_stagnation       = 15
+max_stagnation       = 20
 species_elitism      = 2
 
 [DefaultReproduction]
