@@ -14,10 +14,8 @@ dependencies = [
     "matplotlib>=3.10.7",
     "neat-python>=0.92",
     "numpy>=2.3.4",
-    "opencv-contrib-python>=4.11.0.86",
     "pygame>=2.6.1",
     "scikit-learn>=1.7.2",
     "swig>=4.3.1.post0",
-    "torch>=2.9.0",
     "tqdm>=4.67.1",
 ]
